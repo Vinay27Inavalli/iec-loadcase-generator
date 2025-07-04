@@ -1,6 +1,6 @@
 from io import BytesIO
 import streamlit as st
-st.image("logo.png", width=200)  # or "banner.png" and adjust width
+st.image("Logo.png", width=200)  # or "banner.png" and adjust width
 import pandas as pd
 
 # ---- PAGE SETTINGS ----
