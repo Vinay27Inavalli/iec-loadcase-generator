@@ -20,6 +20,16 @@ based on **IEC 61400-1 Edition 4**. Built for wind engineers, certification team
 
 ---
 
+---
+
+## 📬 Feedback
+
+Have a suggestion, bug, or feature idea?  
+[👉 Submit your feedback here](https://forms.gle/tpPc4HddTKQdUyB19)
+
+
+---
+
 ## 🚀 Getting Started
 
 To run locally:
