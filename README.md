@@ -1,21 +1,31 @@
-# IEC Load Case Matrix Generator (IEC 61400-1 Ed. 4)
+# IEC SSLA Load Case Matrix Generator
 
-This web-based tool helps wind turbine engineers generate load case input matrices for **site-specific load assessments (SSLA)** as per **IEC 61400-1 Edition 4**.
+[Live App 🔗](https://iec-loadcase-generator.streamlit.app/) • [Author: Vinay Inavalli](https://www.linkedin.com/in/vinayinavalli/)
 
-Built using Python and Streamlit.
+---
 
-## ✨ Features
+## 📌 Description
+A web-based tool to generate compliant Load Case Matrices for **Site-Specific Load Assessment (SSLA)**  
+based on **IEC 61400-1 Edition 4**. Built for wind engineers, certification teams, and simulation specialists.
 
-- Select and customize IEC Design Load Cases (DLCs)
-- Add your own custom load cases
-- Optional climate inputs (Yaw Error, Turbulence Intensity, Wind Shear, etc.)
-- Export to:
-  - 📊 Excel (.xlsx)
-  - 📄 Bladed format (.csv)
-  - 🧾 Flex5 format (.txt)
+---
 
-## 🚀 How to Run Locally
+## ⚙️ Features
+- ✅ Generate load case matrices for IEC Ed. 4 (SSLA only)
+- ✅ Select turbine type, wind class, turbulence class
+- ✅ Enable/disable pitch, yaw, fault, and grid loss
+- ✅ Add custom DLCs
+- ✅ Export to Excel, Bladed CSV, and Flex5 TXT formats
+- ✅ Optional climate inputs: TI, shear exponent, yaw error
+
+---
+
+## 🚀 Getting Started
+
+To run locally:
 
 ```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
 pip install -r requirements.txt
 streamlit run iec_ssla_tool.py
