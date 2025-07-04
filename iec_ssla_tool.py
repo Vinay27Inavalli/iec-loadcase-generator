@@ -216,3 +216,6 @@ Developed as a side project by [Vinay Inavalli](https://www.linkedin.com/in/vina
 
 📬 Feedback & collaboration: [vinayinavalli@gmail.com](mailto:vinayinavalli@gmail.com)
 """)
+st.markdown("---")
+st.markdown("📩 Have feedback or suggestions? [Submit here](https://forms.gle/tpPc4HddTKQdUyB19)")
+
