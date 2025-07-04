@@ -152,15 +152,7 @@ if output_format == "Excel":
         file_name="IEC_Load_Case_Matrix.xlsx",
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
-# === A3: Footer ===
-st.markdown("---")
-st.markdown("""
-#### ℹ️ About this Tool  
-This tool helps wind engineers and certification specialists generate compliant DLC matrices for **site-specific load assessments (SSLA)**.  
-Developed as a side project by [Vinay Inavalli](https://www.linkedin.com/in/vinayinavalli/) 🇮🇳
 
-📬 Feedback & collaboration: [vinayinavalli@gmail.com](mailto:vinayinavalli@gmail.com)
-""")
 
 # ---- EXPORT: BLADED CSV ----
 elif output_format == "Bladed":
@@ -214,3 +206,13 @@ elif output_format == "Flex5":
         file_name="load_matrix_flex5.txt",
         mime="text/plain"
     )
+
+# === A3: Footer ===
+st.markdown("---")
+st.markdown("""
+#### ℹ️ About this Tool  
+This tool helps wind engineers and certification specialists generate compliant DLC matrices for **site-specific load assessments (SSLA)**.  
+Developed as a side project by [Vinay Inavalli](https://www.linkedin.com/in/vinayinavalli/) 🇮🇳
+
+📬 Feedback & collaboration: [vinayinavalli@gmail.com](mailto:vinayinavalli@gmail.com)
+""")
