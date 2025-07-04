@@ -1,11 +1,23 @@
 from io import BytesIO
 import streamlit as st
+st.image("logo.png", width=200)  # or "banner.png" and adjust width
 import pandas as pd
 
 # ---- PAGE SETTINGS ----
 st.set_page_config(page_title="IEC SSLA Load Case Matrix Generator", layout="centered")
 st.title("IEC SSLA Load Case Matrix Generator (Ed. 4 Only)")
 st.markdown("🌀 Generate DLC input matrices for **Site-Specific Load Assessments (SSLA)** as per **IEC 61400-1 Edition 4**.")
+
+st.markdown("""
+# **IEC Load Case Matrix Generator**
+Generate SSLA load case matrices compliant with **IEC 61400-1 Ed. 4**  
+Export formats: **Excel**, **Flex5**, **GH Bladed**
+
+🚀 Supports site-specific wind turbine simulations  
+🔧 Includes fault scenarios, grid loss, and user-defined DLCs  
+🌐 Export-ready for certification tools
+""")
+
 
 # ---- FIXED INPUTS ----
 turbine_type = st.selectbox("Turbine Type", ["Onshore", "Offshore", "Floating"])
@@ -140,6 +152,15 @@ if output_format == "Excel":
         file_name="IEC_Load_Case_Matrix.xlsx",
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
+# === A3: Footer ===
+st.markdown("---")
+st.markdown("""
+#### ℹ️ About this Tool  
+This tool helps wind engineers and certification specialists generate compliant DLC matrices for **site-specific load assessments (SSLA)**.  
+Developed as a side project by [Vinay Inavalli](https://www.linkedin.com/in/vinayinavalli/) 🇮🇳
+
+📬 Feedback & collaboration: [vinayinavalli@gmail.com](mailto:vinayinavalli@gmail.com)
+""")
 
 # ---- EXPORT: BLADED CSV ----
 elif output_format == "Bladed":
